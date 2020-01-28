@@ -1,11 +1,9 @@
 ﻿using System;
 using TechTalk.SpecFlow;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
 using System.IO;
 
-namespace UnitTestProject1
+namespace UbsTestProject
 {
     [Binding]
     public class UBSMainSteps
@@ -20,24 +18,30 @@ namespace UnitTestProject1
         [Given(@"the user opens the main UBS webpage")]
         public void GivenTheUserOpensTheMainUBSWebpage()
         {
-            string currentDir = Environment.CurrentDirectory;
-            DirectoryInfo directory = new DirectoryInfo(
-            Path.GetFullPath(Path.Combine(currentDir, @"..\")));
-            IWebDriver webDriver = new ChromeDriver(directory.ToString());          
-            webDriver.Url = "https://www.google.es";
+            var directory = getSolutionDirectory();
+            var webDriver = new ChromeDriver(directory);
+            webDriver.Url = "https://www.ubs.com";
             testBed.webDriver = webDriver;
+        }
+
+        private static string getSolutionDirectory()
+        {
+            var currentDir = Environment.CurrentDirectory;
+            var directory = new DirectoryInfo(
+            Path.GetFullPath(Path.Combine(currentDir, @"..\UbsTestProject\")));
+            return directory.ToString();
         }
 
         [When(@"the user selects his preferred language")]
         public void WhenTheUserSelectsHisPreferredLanguage()
         {
-            ScenarioContext.Current.Pending();
+            
         }
 
         [Then(@"the main UBS webpage is opened in the preferred language")]
         public void ThenTheMainUBSWebpageIsOpenedInThePreferredLanguage()
         {
-            ScenarioContext.Current.Pending();
+            testBed.webDriver.Quit();
         }
 
 

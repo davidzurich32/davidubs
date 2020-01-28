@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace UnitTestProject1
+namespace UbsTestProject
 {
     public class TestBed
     {

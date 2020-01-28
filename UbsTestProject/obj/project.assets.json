@@ -7896,11 +7896,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\davidubs\\UnitTestProject1\\UBSTestProject.csproj",
+      "projectUniqueName": "C:\\davidubs\\UbsTestProject\\UBSTestProject.csproj",
       "projectName": "UBSTestProject",
-      "projectPath": "C:\\davidubs\\UnitTestProject1\\UBSTestProject.csproj",
+      "projectPath": "C:\\davidubs\\UbsTestProject\\UBSTestProject.csproj",
       "packagesPath": "C:\\Users\\tabeda\\.nuget\\packages\\",
-      "outputPath": "C:\\davidubs\\UnitTestProject1\\obj\\",
+      "outputPath": "C:\\davidubs\\UbsTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tabeda\\AppData\\Roaming\\NuGet\\NuGet.Config",

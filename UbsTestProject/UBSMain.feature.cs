@@ -70,11 +70,11 @@ namespace UBSTestProject
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Open UBS Webpage", SourceLine=3)]
-        public virtual void OpenUBSWebpage()
+        [TechTalk.SpecRun.ScenarioAttribute("Open UBS Webpage in the preferred language", SourceLine=3)]
+        public virtual void OpenUBSWebpageInThePreferredLanguage()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open UBS Webpage", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open UBS Webpage in the preferred language", null, ((string[])(null)));
 #line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -97,6 +97,12 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 5
  testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 6
+ testRunner.When("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 7
+ testRunner.Then("the main UBS webpage is opened in the preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
