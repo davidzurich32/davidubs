@@ -1,7 +1,9 @@
-﻿using System;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 using OpenQA.Selenium.Chrome;
-using System.IO;
+using UBSTestProject;
+using System;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 
 namespace UbsTestProject
 {
@@ -9,27 +11,41 @@ namespace UbsTestProject
     public class UBSMainSteps
     {
         TestBed testBed;
-        UBSMainSteps(TestBed testBed)
+        IOHelper iOHelper;
+        UBSMainSteps(TestBed testBed, IOHelper iOHelper)
         {
-            this.testBed = testBed;          
+            this.testBed = testBed;
+            this.iOHelper = iOHelper;
         }
 
         
         [Given(@"the user opens the main UBS webpage")]
         public void GivenTheUserOpensTheMainUBSWebpage()
         {
-            var directory = getSolutionDirectory();
-            var webDriver = new ChromeDriver(directory);
+            IWebDriver webDriver = getWebDriver();
             webDriver.Url = "https://www.ubs.com";
+            webDriver.Manage().Window.Maximize();
             testBed.webDriver = webDriver;
         }
 
-        private static string getSolutionDirectory()
+        private IWebDriver getWebDriver()
         {
-            var currentDir = Environment.CurrentDirectory;
-            var directory = new DirectoryInfo(
-            Path.GetFullPath(Path.Combine(currentDir, @"..\UbsTestProject\")));
-            return directory.ToString();
+            var configuration = testBed.configuration;
+            var directory = iOHelper.getDriversDirectory();
+            IWebDriver webDriver;
+            switch (configuration.browser.ToUpper())
+            {
+                case "FIREFOX":
+                    webDriver = new FirefoxDriver(directory);
+                    break;
+                case "CHROME":
+                    webDriver = new ChromeDriver(directory);
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
+
+            return webDriver;
         }
 
         [When(@"the user selects his preferred language")]

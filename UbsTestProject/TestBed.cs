@@ -1,7 +1,5 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using UBSTestProject;
 
 namespace UbsTestProject
 {
@@ -12,6 +10,8 @@ namespace UbsTestProject
         public int result { get; set; }
 
         public IWebDriver webDriver { get; set; }
+
+        public Configuration configuration { get; set; }
 
 
     }
