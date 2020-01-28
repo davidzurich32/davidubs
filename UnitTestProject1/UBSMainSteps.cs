@@ -13,33 +13,10 @@ namespace UnitTestProject1
         TestBed testBed;
         UBSMainSteps(TestBed testBed)
         {
-            this.testBed = testBed;
-            
-        }
-        [Given(@"I have entered (.*) into the calculator")]
-        public void GivenIHaveEnteredIntoTheCalculator(int p0)
-        {
-            testBed.firstValue = p0;
-        }
-        
-        [Given(@"I have also entered (.*) into the calculator")]
-        public void GivenIHaveAlsoEnteredIntoTheCalculator(int p0)
-        {
-            testBed.secondValue = p0;
-        }
-        
-        [When(@"I press add")]
-        public void WhenIPressAdd()
-        {
-            testBed.result = testBed.firstValue + testBed.secondValue;
-        }
-        
-        [Then(@"the result should be (.*) on the screen")]
-        public void ThenTheResultShouldBeOnTheScreen(int p0)
-        {
-            Assert.AreEqual(p0, testBed.result);
+            this.testBed = testBed;          
         }
 
+        
         [Given(@"the user opens the main UBS webpage")]
         public void GivenTheUserOpensTheMainUBSWebpage()
         {
@@ -49,9 +26,20 @@ namespace UnitTestProject1
             IWebDriver webDriver = new ChromeDriver(directory.ToString());          
             webDriver.Url = "https://www.google.es";
             testBed.webDriver = webDriver;
-
-
         }
+
+        [When(@"the user selects his preferred language")]
+        public void WhenTheUserSelectsHisPreferredLanguage()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
+        [Then(@"the main UBS webpage is opened in the preferred language")]
+        public void ThenTheMainUBSWebpageIsOpenedInThePreferredLanguage()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
 
     }
 }

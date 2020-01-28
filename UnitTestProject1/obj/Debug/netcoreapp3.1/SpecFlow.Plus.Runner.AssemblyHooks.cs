@@ -1,6 +1,6 @@
 using global::TechTalk.SpecFlow;
 
-public class UnitTestProject1_SpecFlowPlusRunnerAssemblyHooks
+public class UBSTestProject_SpecFlowPlusRunnerAssemblyHooks
 {
     [global::TechTalk.SpecRun.AssemblyInitialize]
     public static void AssemblyInitialize()

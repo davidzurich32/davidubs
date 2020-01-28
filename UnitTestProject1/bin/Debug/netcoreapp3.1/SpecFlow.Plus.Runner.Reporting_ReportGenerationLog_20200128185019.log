@@ -1,0 +1,10 @@
+﻿2020-01-28T18:50:20.0101333+01:00;Thread#1;Info;Reading test run result from Json file "C:\Users\tabeda\AppData\Local\Temp\tmp54E1.tmp".
+2020-01-28T18:50:20.0161159+01:00;Thread#1;Info;Successfully read test run result from Json file "C:\Users\tabeda\AppData\Local\Temp\tmp54E1.tmp"
+2020-01-28T18:50:20.0161159+01:00;Thread#1;Info;Deserializing test run result
+2020-01-28T18:50:20.4080672+01:00;Thread#1;Info;Successfully deserialized test run result
+2020-01-28T18:50:20.4080672+01:00;Thread#1;Info;Loading test run result
+2020-01-28T18:50:20.4240245+01:00;Thread#1;Info;Successfully loaded test run result
+2020-01-28T18:50:20.4310198+01:00;Thread#1;Info;creating 1 report(s)
+2020-01-28T18:50:20.4310198+01:00;Thread#1;Info;generate Report ReportTemplate.cshtml
+2020-01-28T18:50:20.9865206+01:00;Thread#1;Info;Finished generating reports.
+========== End of log file ==========

@@ -1,14 +1,8 @@
-﻿Feature: SpecFlowFeature1
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+﻿Feature: UBS Interview Task
+	Task previous to the technical interview with ubs
 
-@mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have also entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
-
-Scenario: Open UBS Webpage
+Scenario: Open UBS Webpage in the preferred language
 	Given the user opens the main UBS webpage
+	When the user selects his preferred language
+	Then the main UBS webpage is opened in the preferred language
+

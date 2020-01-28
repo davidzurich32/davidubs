@@ -7896,9 +7896,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\davidubs\\UnitTestProject1\\UnitTestProject1.csproj",
-      "projectName": "UnitTestProject1",
-      "projectPath": "C:\\davidubs\\UnitTestProject1\\UnitTestProject1.csproj",
+      "projectUniqueName": "C:\\davidubs\\UnitTestProject1\\UBSTestProject.csproj",
+      "projectName": "UBSTestProject",
+      "projectPath": "C:\\davidubs\\UnitTestProject1\\UBSTestProject.csproj",
       "packagesPath": "C:\\Users\\tabeda\\.nuget\\packages\\",
       "outputPath": "C:\\davidubs\\UnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
