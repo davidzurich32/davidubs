@@ -25,7 +25,9 @@ namespace UBSTestProject
         public void BeforeScenario()
         {
             Configuration configuration = iOHelper.readJson<Configuration>("configuration.json");
-            testBed.configuration = configuration;
+            SeleniumIds seleniumIds = iOHelper.readJson<SeleniumIds>("Selenium.json");
+            testBed.Configuration = configuration;
+            testBed.SeleniumIds = seleniumIds;
         }
 
         [AfterScenario]

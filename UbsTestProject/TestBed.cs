@@ -5,14 +5,9 @@ namespace UbsTestProject
 {
     public class TestBed
     {
-        public int firstValue { get; set; }
-        public int secondValue { get; set; }
-        public int result { get; set; }
+        public IWebDriver WebDriver { get; set; }
 
-        public IWebDriver webDriver { get; set; }
-
-        public Configuration configuration { get; set; }
-
-
+        public Configuration Configuration { get; set; }
+        public SeleniumIds SeleniumIds { get; set; }
     }
 }
