@@ -4,6 +4,9 @@ using System.IO;
 
 namespace UbsTestProject
 {
+    /// <summary>
+    /// Utility for managing json files and directory access
+    /// </summary>
     public class IOHelper
     {
         public string getSolutionDirectory()

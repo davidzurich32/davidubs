@@ -4,6 +4,9 @@ using System.Text;
 
 namespace UbsTestProject
 {
+    /// <summary>
+    /// Contains the Ids of the wegpage ui, which can be modified through configuration
+    /// </summary>
     public class SeleniumIds
     {
         public string LanguageButton { get; set; }

@@ -1,5 +1,8 @@
 ﻿namespace UbsTestProject
 {
+    /// <summary>
+    /// The expected results and some other data, that has been passed as a config file, making the tests configurable
+    /// </summary>
     public class Configuration
     {
         public string Language { get; set; }

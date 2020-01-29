@@ -4,6 +4,9 @@ using System;
 
 namespace UbsTestProject
 {
+    /// <summary>
+    /// contains different methods for managing selenium, for instance wait, or click or text input, etc.
+    /// </summary>
     public class SeleniumHelper
     {
         public static Func<IWebDriver, IWebElement> ElementIsClickable(By locator)

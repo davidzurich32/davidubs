@@ -3,6 +3,9 @@ using TechTalk.SpecFlow;
 
 namespace UbsTestProject
 {
+    /// <summary>
+    /// Contains the actions to do before and after each step
+    /// </summary>
     [Binding]
     public sealed class Hooks
     {

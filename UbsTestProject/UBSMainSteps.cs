@@ -7,6 +7,9 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UbsTestProject
 {
+    /// <summary>
+    /// contains the implementation of the steps needed to manage and navigate in the main ubs webpage
+    /// </summary>
     [Binding]
     public class UBSMainSteps
     {

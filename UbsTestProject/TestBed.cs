@@ -2,6 +2,9 @@
 
 namespace UbsTestProject
 {
+    /// <summary>
+    /// class used to communicate specflow steps between them
+    /// </summary>
     public class TestBed
     {
         public IWebDriver WebDriver { get; set; }
