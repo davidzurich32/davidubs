@@ -1,3 +1,15 @@
 ﻿{
-	"languageButton":"menulabel-6001" 
+	"languageButton":"menulabel-6001",
+	"englishLanguage":"menulabel-6102",
+	"germanLanguage":"menulabel-6113",
+	"EnglishAbbreviation":"EN",
+	"GermanAbbreviation":"DE",
+	"HeaderTitle":"header__hlTitle",
+	"Mortgage":"menulabel-3012",
+	"MortgageCalculator":"menulabel-60212",
+	"MortgagePrice":"mortgageCalc__inputmortgageCalc__canIAffordItPrice",
+	"Income":"mortgageCalc__inputmortgageCalc__canIAffordItIncome",
+	"Equity":"mortgageCalc__inputmortgageCalc__canIAffordItSavings",
+	"MortgageSubmitQuery":"mortgageCalc__submitGeneral",
+	"MortgageResultParagraph":"mortgageCalc__resultParagraph"
 }

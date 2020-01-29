@@ -1,10 +1,9 @@
 ﻿using TechTalk.SpecFlow;
 using OpenQA.Selenium.Chrome;
-using UBSTestProject;
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Support.UI;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UbsTestProject
 {
@@ -38,7 +37,7 @@ namespace UbsTestProject
             var configuration = testBed.Configuration;
             var directory = iOHelper.getDriversDirectory();
             IWebDriver webDriver;
-            switch (configuration.browser.ToUpper())
+            switch (configuration.Browser.ToUpper())
             {
                 case "FIREFOX":
                     webDriver = new FirefoxDriver(directory);
@@ -54,11 +53,33 @@ namespace UbsTestProject
         }
 
         [When(@"the user selects his preferred language")]
+        [Given(@"the user selects his preferred language")]
         public void WhenTheUserSelectsHisPreferredLanguage()
         {
-            seleniumHelper.click(testBed.WebDriver, testBed.SeleniumIds.languageButton);
+            String text = seleniumHelper.getTextById(testBed.WebDriver, testBed.SeleniumIds.LanguageButton);
             
+            switch (testBed.Configuration.Language.ToUpper())
+            {
+                case "ENGLISH":
+                    if (!text.Equals(testBed.SeleniumIds.EnglishAbbreviation))
+                    {
+                        seleniumHelper.clickById(testBed.WebDriver, testBed.SeleniumIds.LanguageButton);
+                        seleniumHelper.clickById(testBed.WebDriver, testBed.SeleniumIds.EnglishLanguage);
+                    }
+                    
+                    break;
+                case "GERMAN":
+                    if (!text.Equals(testBed.SeleniumIds.GermanAbbreviation))
+                    {
+                        seleniumHelper.clickById(testBed.WebDriver, testBed.SeleniumIds.LanguageButton);
+                        seleniumHelper.clickById(testBed.WebDriver, testBed.SeleniumIds.GermanLanguage);
+                    }
+                    
+                    break;
+                default:
+                    throw new NotImplementedException();
 
+            }
         }
 
         
@@ -66,7 +87,9 @@ namespace UbsTestProject
         [Then(@"the main UBS webpage is opened in the preferred language")]
         public void ThenTheMainUBSWebpageIsOpenedInThePreferredLanguage()
         {
-            testBed.WebDriver.Quit();
+            String text = seleniumHelper.getTextByClass(testBed.WebDriver, testBed.SeleniumIds.HeaderTitle);
+            Assert.AreEqual(testBed.Configuration.Title, text);
+            
         }
 
 

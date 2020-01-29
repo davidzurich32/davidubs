@@ -1,0 +1,7 @@
+Following versions of the firefox or chrome has been tested and should be used:
+Firefox version: 72.0.*
+Chrome Version: 79.0.*
+
+There are two different config files.
+configuration.json (English version)
+configurationGerman.json (German version)

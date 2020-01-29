@@ -666,7 +666,6 @@ C:\davidubs\UbsTestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatfor
 C:\davidubs\UbsTestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\davidubs\UbsTestProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\davidubs\UbsTestProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.csprojAssemblyReference.cache
 C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.AssemblyInfoInputs.cache
 C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.AssemblyInfo.cs
 C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.csproj.CopyComplete

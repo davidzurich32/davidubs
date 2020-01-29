@@ -1,11 +1,7 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.IO;
+﻿using System;
 using TechTalk.SpecFlow;
-using UbsTestProject;
 
-namespace UBSTestProject
+namespace UbsTestProject
 {
     [Binding]
     public sealed class Hooks
@@ -28,12 +24,27 @@ namespace UBSTestProject
             SeleniumIds seleniumIds = iOHelper.readJson<SeleniumIds>("Selenium.json");
             testBed.Configuration = configuration;
             testBed.SeleniumIds = seleniumIds;
+            SeleniumLanguageSpecificIds seleniumLanguageSpecificIds;
+            switch(configuration.Language.ToUpper())
+            {
+                case "ENGLISH":
+                    seleniumLanguageSpecificIds = iOHelper.readJson<SeleniumLanguageSpecificIds>("SeleniumEnglish.json");
+                    testBed.SeleniumLanguageSpecificIds = seleniumLanguageSpecificIds;
+                    break;
+                case "GERMAN":
+                    seleniumLanguageSpecificIds = iOHelper.readJson<SeleniumLanguageSpecificIds>("SeleniumGerman.json");
+                    testBed.SeleniumLanguageSpecificIds = seleniumLanguageSpecificIds;
+                    break;
+                default:
+                    throw new NotImplementedException();
+            }
+            
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-            //TODO: implement logic that has to run after executing each scenario
+            testBed.WebDriver.Quit();
         }
     }
 }

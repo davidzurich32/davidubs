@@ -108,6 +108,174 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation positive", SourceLine=8)]
+        public virtual void MortgageCalculationPositive()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mortgage calculation positive", null, ((string[])(null)));
+#line 9
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 10
+ testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 11
+ testRunner.And("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 12
+ testRunner.When("the user navigates to the mortgage calculator screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field",
+                            "Value"});
+                table1.AddRow(new string[] {
+                            "Purchase",
+                            "700000"});
+                table1.AddRow(new string[] {
+                            "Income",
+                            "120000"});
+                table1.AddRow(new string[] {
+                            "Equity",
+                            "170000"});
+#line 13
+ testRunner.And("enters following values", ((string)(null)), table1, "And ");
+#line hidden
+#line 18
+ testRunner.Then("the user can get the credit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation negative because income", SourceLine=19)]
+        public virtual void MortgageCalculationNegativeBecauseIncome()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mortgage calculation negative because income", null, ((string[])(null)));
+#line 20
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 21
+ testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 22
+ testRunner.And("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 23
+ testRunner.When("the user navigates to the mortgage calculator screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field",
+                            "Value"});
+                table2.AddRow(new string[] {
+                            "Purchase",
+                            "2000000"});
+                table2.AddRow(new string[] {
+                            "Income",
+                            "120000"});
+                table2.AddRow(new string[] {
+                            "Equity",
+                            "600000"});
+#line 24
+ testRunner.And("enters following values", ((string)(null)), table2, "And ");
+#line hidden
+#line 29
+ testRunner.Then("the user cannot get the credit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation negative because equity", SourceLine=30)]
+        public virtual void MortgageCalculationNegativeBecauseEquity()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mortgage calculation negative because equity", null, ((string[])(null)));
+#line 31
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 32
+ testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 33
+ testRunner.And("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+ testRunner.When("the user navigates to the mortgage calculator screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field",
+                            "Value"});
+                table3.AddRow(new string[] {
+                            "Purchase",
+                            "3000000"});
+                table3.AddRow(new string[] {
+                            "Income",
+                            "500000"});
+                table3.AddRow(new string[] {
+                            "Equity",
+                            "400000"});
+#line 35
+ testRunner.And("enters following values", ((string)(null)), table3, "And ");
+#line hidden
+#line 40
+ testRunner.Then("the user cannot get the credit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {

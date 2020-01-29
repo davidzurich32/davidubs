@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using UBSTestProject;
 
 namespace UbsTestProject
 {
@@ -9,5 +8,7 @@ namespace UbsTestProject
 
         public Configuration Configuration { get; set; }
         public SeleniumIds SeleniumIds { get; set; }
+
+        public SeleniumLanguageSpecificIds SeleniumLanguageSpecificIds { get; set; }
     }
 }

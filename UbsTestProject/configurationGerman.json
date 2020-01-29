@@ -1,4 +1,8 @@
 ﻿{
 	"language":"german",
-	"browser":"firefox"
+	"browser":"firefox",
+	"title":"Schweiz",
+	"MortgagePositiveResult":"Gemäss Ihren Angaben können Sie sich die Immobilie leisten.",
+	"MortgageNegativeResult":"Gemäss Ihren Angaben liegt der Kaufpreis der Immobilie über Ihrem Budget."
+	
 }
