@@ -671,3 +671,4 @@ C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.AssemblyInfo.c
 C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.csproj.CopyComplete
 C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.dll
 C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.pdb
+C:\davidubs\UbsTestProject\obj\Debug\netcoreapp3.1\UBSTestProject.csprojAssemblyReference.cache

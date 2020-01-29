@@ -13,8 +13,8 @@ namespace UbsTestProject
         /// <summary>
         /// Steps that implement the mortgages scenarios.
         /// </summary>
-        /// <param name="seleniumHelper">an instance of the seleniumhelper, selenium utility class<seealso cref="SeleniumHelper"></param>
-        /// <param name="testBed">an instance of the testbed, containing data needed between steps<seealso cref="TestBed"></param>
+        /// <param name="seleniumHelper">Selenium utility class<seealso cref="SeleniumHelper"></param>
+        /// <param name="testBed">Parameter containing the data needed between steps<seealso cref="TestBed"></param>
         MortgageSteps(SeleniumHelper seleniumHelper, TestBed testBed)
         {
             this.seleniumHelper = seleniumHelper;
