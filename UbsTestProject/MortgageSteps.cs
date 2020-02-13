@@ -24,10 +24,11 @@ namespace UbsTestProject
         [When(@"the user navigates to the mortgage calculator screen")]
         public void WhenTheUserNavigatesToTheMortgageScreen()
         {
-            seleniumHelper.clickByPath(testBed.WebDriver, testBed.SeleniumLanguageSpecificIds.PrivateClients);
-            seleniumHelper.clickById(testBed.WebDriver, testBed.SeleniumIds.Mortgage);
-            seleniumHelper.clickById(testBed.WebDriver, testBed.SeleniumIds.MortgageCalculator);
-           
+            var webDriver = testBed.WebDriver;
+            webDriver.Url = "https://www.ubs.com/ch/en/private/mortgages/mortgage-calculator.html";
+            webDriver.Manage().Window.Maximize();
+            testBed.WebDriver = webDriver;
+
         }
         
         [When(@"enters following values")]
