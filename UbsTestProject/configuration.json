@@ -1,8 +1,8 @@
 ﻿{
-	"language":"english",
-	"browser":"chrome",
-	"title":"Switzerland",
-	"MortgagePositiveResult":"According to your data you can afford the property.",
-	"MortgageNegativeResult":"According to your data the purchase price is over your budget."
+	"language":"german",
+	"browser":"firefox",
+	"title":"Schweiz",
+	"MortgagePositiveResult":"Gemäss Ihren Angaben können Sie sich die Immobilie leisten.",
+	"MortgageNegativeResult":"Gemäss Ihren Angaben liegt der Kaufpreis der Immobilie über Ihrem Budget."
 	
 }

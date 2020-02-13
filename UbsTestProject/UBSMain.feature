@@ -8,7 +8,6 @@ Scenario: Open UBS Webpage in the preferred language
 
 Scenario: Mortgage calculation positive
 	Given the user opens the main UBS webpage
-	And the user selects his preferred language
 	When the user navigates to the mortgage calculator screen
 	And enters following values
 	|Field|Value|
@@ -19,7 +18,6 @@ Scenario: Mortgage calculation positive
 
 Scenario: Mortgage calculation negative because income
 	Given the user opens the main UBS webpage
-	And the user selects his preferred language
 	When the user navigates to the mortgage calculator screen
 	And enters following values
 	|Field|Value|
@@ -30,7 +28,6 @@ Scenario: Mortgage calculation negative because income
 
 Scenario: Mortgage calculation negative because equity
 	Given the user opens the main UBS webpage
-	And the user selects his preferred language
 	When the user navigates to the mortgage calculator screen
 	And enters following values
 	|Field|Value|

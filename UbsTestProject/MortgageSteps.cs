@@ -25,7 +25,7 @@ namespace UbsTestProject
         public void WhenTheUserNavigatesToTheMortgageScreen()
         {
             var webDriver = testBed.WebDriver;
-            webDriver.Url = "https://www.ubs.com/ch/en/private/mortgages/mortgage-calculator.html";
+            webDriver.Url = testBed.SeleniumLanguageSpecificIds.MortgageWebpage;
             webDriver.Manage().Window.Maximize();
             testBed.WebDriver = webDriver;
 

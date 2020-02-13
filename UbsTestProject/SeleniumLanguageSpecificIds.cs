@@ -5,6 +5,6 @@
     /// </summary>
     public class SeleniumLanguageSpecificIds
     {
-        public string PrivateClients { get; set; }
+        public string MortgageWebpage { get; set; }
     }
 }

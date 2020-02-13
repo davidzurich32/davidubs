@@ -137,9 +137,6 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 11
- testRunner.And("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 12
  testRunner.When("the user navigates to the mortgage calculator screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -154,22 +151,22 @@ this.ScenarioInitialize(scenarioInfo);
                 table1.AddRow(new string[] {
                             "Equity",
                             "170000"});
-#line 13
+#line 12
  testRunner.And("enters following values", ((string)(null)), table1, "And ");
 #line hidden
-#line 18
+#line 17
  testRunner.Then("the user can get the credit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation negative because income", SourceLine=19)]
+        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation negative because income", SourceLine=18)]
         public virtual void MortgageCalculationNegativeBecauseIncome()
         {
             string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mortgage calculation negative because income", null, ((string[])(null)));
-#line 20
+#line 19
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -189,13 +186,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 21
+#line 20
  testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 22
- testRunner.And("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 23
+#line 21
  testRunner.When("the user navigates to the mortgage calculator screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -210,22 +204,22 @@ this.ScenarioInitialize(scenarioInfo);
                 table2.AddRow(new string[] {
                             "Equity",
                             "600000"});
-#line 24
+#line 22
  testRunner.And("enters following values", ((string)(null)), table2, "And ");
 #line hidden
-#line 29
+#line 27
  testRunner.Then("the user cannot get the credit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation negative because equity", SourceLine=30)]
+        [TechTalk.SpecRun.ScenarioAttribute("Mortgage calculation negative because equity", SourceLine=28)]
         public virtual void MortgageCalculationNegativeBecauseEquity()
         {
             string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Mortgage calculation negative because equity", null, ((string[])(null)));
-#line 31
+#line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -245,13 +239,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 32
+#line 30
  testRunner.Given("the user opens the main UBS webpage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 33
- testRunner.And("the user selects his preferred language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 34
+#line 31
  testRunner.When("the user navigates to the mortgage calculator screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -266,10 +257,10 @@ this.ScenarioInitialize(scenarioInfo);
                 table3.AddRow(new string[] {
                             "Equity",
                             "400000"});
-#line 35
+#line 32
  testRunner.And("enters following values", ((string)(null)), table3, "And ");
 #line hidden
-#line 40
+#line 37
  testRunner.Then("the user cannot get the credit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
